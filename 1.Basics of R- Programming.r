@@ -75,7 +75,7 @@ Banking Application
 
 R Program:
 account_no <- 12345A567
-holder_name <- "Bhanu Prakash"
+holder_name <- "sai"
 balance <- 950000.50
 account_active <- TRUE
 account_no
