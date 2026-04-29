@@ -7,9 +7,9 @@ R Program:
 # Step 1: Create dataset
 students <- data.frame(
 Name = c("ARJUN","DIVYA","KIRAN","POOJA","NAVEEN","ANU","RAHUL","SNEHA","VARUN","NEHA"),
-Maths = c(65,78,88,92,74,81,69,95,84,77),
-Science = c(72,85,91,89,80,76,88,94,79,83),
-English = c(70,82,87,90,85,78,75,93,80,86)
+Maths = c(85,78,88,92,74,81,99,95,84,77),
+Science = c(72,85,91,89,90,76,88,94,79,83),
+English = c(70,82,97,90,85,78,75,93,90,86)
 )
 # Step 2: Mean, Median, SD
 mean_marks <- sapply(students[ ,2:4], mean)
@@ -35,11 +35,11 @@ R Program:
 # Step 1: Create dataset
 sales <- data.frame(
 Product = c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard"),
-Day1 = c(20,15,18,22,10,25,30),
-Day2 = c(25,18,20,24,12,28,35),
-Day3 = c(30,20,25,28,15,30,40),
-Day4 = c(35,22,27,30,18,35,45),
-Day5 = c(40,25,30,35,20,38,50)
+Day1 = c(10,15,18,22,10,25,30),
+Day2 = c(75,18,20,24,12,28,35),
+Day3 = c(20,20,25,28,15,30,40),
+Day4 = c(55,22,27,30,18,35,45),
+Day5 = c(10,25,30,35,20,38,50)
 )
 
 # Step 2: Mean, Max, Min, Variance per product
@@ -64,7 +64,7 @@ R Program:
 patients <- data.frame(
 PatientID = 201:210,
 Name = c("KIRAN","ANIL","SUDHA","RAJU","MEENA","VIKRAM","LATHA","ARUN","GEETHA","MOHAN"),
-Age = c(34,47,51,29,60,45,53,38,42,57)
+Age = c(34,67,51,29,60,45,83,38,42,57)
 )
 # Statistical analysis
 mean_age <- mean(patients$Age)
@@ -86,11 +86,11 @@ Employee Salary Analysis
 R Program:
 # Dataset
 employees <- data.frame(
-EmpID = 111:120,
+EmpID = 211:220,
 Name =
 c("ARUN","PRIYA","KARTHIK","DIVYA","RAJ","SURESH","ANITA","VENU","PRADEEP","NISHA"),
 Dept = c("IT","HR","Finance","IT","HR","Finance","IT","HR","Finance","IT"),
-Salary = c(600000,450000,700000,520000,480000,750000,820000,390000,670000,550000)
+Salary = c(600000,650000,700000,520000,480000,750000,520000,390000,470000,550000)
 )
 # Mean and Median per department
 dept_stats <- aggregate(Salary ~ Dept, data=employees, function(x) c(Mean=mean(x),
@@ -112,7 +112,7 @@ ratings <- data.frame(
 ProductID = 11:20,
 Product =
 c("TV","AC","Fridge","WashingMachine","Oven","Mixer","Fan","Cooler","Heater","Iron"),
-Rating = c(8,6,7,9,5,6,7,8,9,6)
+Rating = c(4,6,7,6,5,6,4,8,9,6)
 )
 # Mean, Median, Variance
 mean_rating <- mean(ratings$Rating)
