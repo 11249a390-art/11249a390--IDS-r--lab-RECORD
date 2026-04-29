@@ -37,5 +37,5 @@ quantity_per_category
 
 Step 6: Filter High-Value Products (Optional)
 # Products with total sales greater than 10000
-high_sales <- total_sales_product[total_sales_product$TotalSales > 10000, ]
+high_sales <- total_sales_product[total_sales_product$TotalSales > 12000, ]
 high_sales
