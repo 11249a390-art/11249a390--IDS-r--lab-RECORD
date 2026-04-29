@@ -4,13 +4,13 @@ University Course Enrollment
 R Program:
 # Data
 departments <- c("CSE", "ECE", "IT", "Mechanical")
-students <- c(1200, 800, 600, 400)
+students <- c(1300, 900, 500, 700)
 # Pie Chart
 pie(
 students,
 labels = departments,
 main = "Student Enrollment per Department",
-col = c("light blue", "navyblue", "yellow", "maroon")
+col = c("yellow","pink","black","blue")
 )
 # Bar Chart
 barplot(
@@ -19,7 +19,7 @@ names.arg = departments,
 main = "Number of Students per Department",
 xlab = "Department",
 ylab = "Number of Students",
-col = c("light blue", "navyblue", "yellow", "maroon")
+col = c("yellow","pink","black","blue")
 )
 
 
@@ -29,7 +29,7 @@ Retail Store Sales Distribution
 R Program:
 # Data
 category <- c("Electronics", "Clothing", "Accessories", "Home Appliances")
-sales <- c(900000, 805000, 600000, 45000)
+sales <- c(950000, 850000, 400000, 45000)
 # Pie Chart
 pie(
 sales,
@@ -53,15 +53,15 @@ col = rainbow(length(category))
 Online Exam Result Analysis
 R Program:
 # Data
-grades <- c("A", "B", "C", "D")
+grades <- c("W", "X", "Y", "Z")
 
-count <- c(35,40,20,30)
+count <- c(45,40,70,30)
 # Pie Chart
 pie(
 count,
 labels = grades,
 main = "Grade Distribution",
-col = c("yellow","white","orange","pink")
+col = c("yellow","navy blue","orange","pink")
 )
 # Bar Chart
 barplot(
@@ -70,7 +70,7 @@ names.arg = grades,
 main = "Number of Students per Grade",
 xlab = "Grade",
 ylab = "Number of Students",
-col = c("yellow","white","orange","pink")
+col = c("yellow","navy blue","orange","pink")
 )
 
 
@@ -86,7 +86,7 @@ pie(
 employees,
 labels = experience,
 main = "Employee Experience Distribution",
-col = c("yellow","white","orange","pink")
+col = c("yellow","black","orange","pink")
 )
 # Bar Chart
 barplot(
@@ -96,7 +96,7 @@ names.arg = experience,
 main = "Number of Employees by Experience",
 xlab = "Experience Level",
 ylab = "Number of Employees",
-col = c("yellow","white","orange","pink")
+col = c("yellow","black","orange","pink")
 )
 
 
@@ -107,7 +107,7 @@ Agricultural Crop Production
 R Program:
 # Data
 crop <- c("Rice", "Wheat", "Maize", "Onion")
-production <- c(300,2500,150,100)
+production <- c(700,2500,750,100)
 production,
 labels = crop,
 main = "Crop Production Distribution",
