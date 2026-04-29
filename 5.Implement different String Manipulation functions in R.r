@@ -4,7 +4,7 @@ EXERCISE 05 :IMPLEMENT DIFFERENT STRING MMANIPULATION FUNCTION IN R.r
 
 Employee Name Standardization
 R PROGRAM:
-names <- c("KIRAN", "MEENA", "ARUN")
+names <- c("aman","anu","ammu")
 upper_names <- topper(names)
 name_length <- nchar(upper_names)
 upper_names
@@ -15,7 +15,7 @@ name_length
 
 Student Email Processing
 R PROGRAM:
-emails <- c("KIRAN@gmail.com", "MEENA@yahoo.com", "ARUN@outlook.com")
+emails <- c("AMAN@gmail.com", "ANU@yahoo.com", "NITHYA@outlook.com")
 usernames <- sub("@.*", "", emails)
 usernames
 
@@ -24,7 +24,7 @@ usernames
 
 Online Form Input Cleanup
 R PROGRAM:
-input <- c(" Machine Learning ", " Deep Learning ", " Data Analytics ")
+input <- c(" IOT", " Deep Learning ", " Data Analytics ")
 clean_input <- trimws(input)
 clean_input
 
@@ -33,7 +33,7 @@ clean_input
 
 Product Code Validation
 R PROGRAM:
-product_codes <- c("PRD901", "PRD902", "ABC903")
+product_codes <- c("PRD201", "PRD202", "ABC203")
 valid_codes <- startsWith(product_codes, "PRD")
 valid_codes
 
@@ -50,7 +50,7 @@ updated_report
 
 Password Strength Checker
 R PROGRAM:
-password <- "UJWALA246"
+password <- "BHANUMATI246"
 if(nchar(password) >= 8){
 print("Strong Password")
 } else {
@@ -62,7 +62,7 @@ print("Weak Password")
 
 Sentence Word Count
 R PROGRAM:
-sentence <- "Python is widely used in data science"
+sentence <- "R Programmimg is widely used in data science"
 word_count <- length(strsplit(sentence, " ")[[1]])
 word_count
 
@@ -80,7 +80,7 @@ extensions
 
 Student Name Abbreviation
 R PROGRAM:
-names <- c("KIRAN", "SANDHYA", "PRADEEP")
+names <- c("aman","anu","ammu")
 abbr <- substr(names, 1, 3)
 abbr
 
@@ -89,7 +89,7 @@ abbr
 
 Search Operation in Text
 R PROGRAM:
-names <- c("KIRAN", "SANDHYA", "PRADEEP", "RAJ")
+names <- c("aman","anu","ammu","bhanu")
 matched_names <- grep("a", names, value = TRUE)
 matched_names
 
@@ -99,9 +99,9 @@ matched_names
 University Student Data Cleaning System
 R PROGRAM:
 students <- data.frame(
-Name = c(" Kavya ", "RAHUL ", " sneha"),
-Email = c("kavya@college.edu", "rahul@college.edu", "sneha@gmail.com"),
-Department = c(" Finance", "ECE ", " Cse ")
+Name = c('aman","anu","bhanu"),
+Email = c("aman@college.edu", "anu@college.edu", "bhanu@gmail.com"),
+Department = c(" Finance", "ECE ", " IT ")
 )
 students
 
@@ -125,7 +125,7 @@ products
 Social Media Comment Moderation System
 R PROGRAM
 comments <- data.frame(
-User = c("X", "Y", "Z"),
+User = c("A", "B", "C"),
 Comment = c(
 "This service is poor",
     "Very POOR experience",
