@@ -4,9 +4,9 @@ EXERCISE 01 - BASICS OF R - PROGRAMMING
 Student Information System
 
 R Program:
-roll_no <- 390 # Integer
-name <- "UJWALA" # Character
-cgpa <- 9.4 # Numeric
+roll_no <- 122 # Integer
+name <- "Roshni" # Character
+cgpa <- 9.8 # Numeric
 pass <- TRUE # Logical
 roll_no
 name
@@ -18,9 +18,9 @@ pass
 Employee Salary Record
 
 R Program:
-emp_id <- 9001
-salary <- 55000.75
-department <- "CSE"
+emp_id <- 1000
+salary <- 95000.75
+department <- "ECE"
 is_permanent <- TRUE
 emp_id
 salary
@@ -32,7 +32,7 @@ is_permanent
 Online Shopping Cart
 
 R Program:
-product_name <- "I-PHONE"
+product_name <- "COMPUTER"
 price <- 100000
 stock_available <- 10
 discount_eligible <- FALSE
@@ -46,10 +46,10 @@ discount_eligible
 Weather Monitoring System
 
 R Program:
-city <- "KADAPA"
-temperature <- 35
+city <- "CHITTOOR"
+temperature <- 65
 rain <- FALSE
-wind_speed <- 16.2
+wind_speed <- 20.2
 city
 temperature
 rain
@@ -62,8 +62,8 @@ Examination Result Processing
 R Program:
 subject <- "R-LAB"
 total_marks <- 100
-marks_obtained <- 95
-result <- marks_obtained >= 40
+marks_obtained <- 85
+result <- marks_obtained >= 35
 subject
 total_marks
 marks_obtained
@@ -74,9 +74,9 @@ result
 Banking Application
 
 R Program:
-account_no <- 1234588567
-holder_name <- "sai"
-balance <- 950000.50
+account_no <- 97865432
+holder_name <- "RAM"
+balance <- 850000.50
 account_active <- TRUE
 account_no
 holder_name
@@ -88,9 +88,9 @@ account_active
 Movie Rating System
 
 R Program:
-movie_title <- "18-Pages"
+movie_title <- "7-Pages"
 rating <- 10.10
-reviews <- 19000
+reviews <- 20000
 available <- TRUE
 movie_title
 rating
@@ -102,9 +102,9 @@ available
 Traffic Monitoring System
 
 R Program:
-vehicle_count <- 590
+vehicle_count <- 900
 location <- "Highway Road"
-avg_speed <- 60
+avg_speed <- 70
 congested <- TRUE
 vehicle_count
 location
