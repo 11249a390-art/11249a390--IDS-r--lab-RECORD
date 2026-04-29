@@ -6,21 +6,21 @@ College Student Record System
 R PROGRAM:
 # Student details
 students <- data.frame(
-RollNo = c(401, 402, 403),
-Name = c("Kiran", "Meena", "Arun"),
+RollNo = c(201, 202, 203),
+Name = c("AMAN","ANU","BHANU"),
 Dept = c("IT", "CSE", "ECE")
 )
 # Student marks
 marks <- data.frame(
-Marks = c(98,99,100)
+Marks = c(97,99,99)
 )
 # Join columns
 student_data <- cbind(students, marks)
 student_data
 # Add new student records
 new_students <- data.frame(
-RollNo = c(390),
-Name = c("Ujwala"),
+RollNo = c(1022),
+Name = c("BHANU"),
 Dept = c("CSE"),
 Marks = c(98)
 )
@@ -34,21 +34,21 @@ Employee Management System
 R PROGRAM:
 employee_details <- data.frame(
 EmpID = c(10, 11, 12),
-Name = c("Ujwala", "Bhanu", "Nithya"),
+Name = c("ROHIT", "ANU", "NEHA"),
 Dept = c("Finance", "ECE", "HR")
 )
 salary_details <- data.frame(
-Salary = c(30000, 55000, 45000)
+Salary = c(37000, 57000, 47000)
 )
 # Join columns
 employees <- cbind(employee_details, salary_details)
 employees
 # Add new employee
 new_employee <- data.frame(
-EmpID = 309,
+EmpID = 3109,
 Name = "BHANUMATI",
-Dept = "CSE",
-Salary = 100000
+Dept = "ECE",
+Salary = 150000
 )
 employees <- rbind(employees, new_employee)
 employees
@@ -59,22 +59,22 @@ employees
 Hospital Patient Records
 R PROGRAM:
 patient_info <- data.frame(
-PatientID = c(501, 502),
+PatientID = c(201, 202),
 Name = c("Manoj", "Geetha"),
-Age = c(42, 36)
+Age = c(49, 39)
 )
 treatment_cost <- data.frame(
-Cost = c(18000, 22000)
+Cost = c(15000, 27000)
 )
 # Combine column-wise
 patient_records <- cbind(patient_info, treatment_cost)
 patient_records
 # Add new patient
 new_patient <- data.frame(
-PatientID = 503,
-Name = "Karthik",
+PatientID = 603,
+Name = "AMAN",
 Age = 39,
-Cost = 26000
+Cost = 29000
 )
 patient_records <- rbind(patient_records, new_patient)
 patient_records
@@ -85,7 +85,7 @@ patient_records
 Product Inventory System
 R PROGRAM:
 products <- data.frame(
-ProductID = c(10, 11, 12),
+ProductID = c(1, 1, 1),
 ProductName = c("Notebook", "Marker", "Eraser")
 )
 stock <- data.frame(
@@ -114,17 +114,17 @@ R PROGRAM:
 
 students <- data.frame(
 RollNo = c(11, 12, 13),
-Name = c("Nisha", "Rohit", "Sneha"),
-Dept = c("ECE", "IT", "CSE")
+Name = c("NITHYA","NEHA","BHANU"),
+Dept = c("FINANCE", "IT", "CSE")
 )
 # Semester marks
 marks <- data.frame(
-Sem1 = c(75, 68, 88),
-Sem2 = c(80, 72, 91)
+Sem1 = c(79, 68, 88),
+Sem2 = c(80, 62, 91)
 )
 # Attendance
 attendance <- data.frame(
-Attendance = c(85, 90, 88)
+Attendance = c(85, 98, 88)
 )
 # Combine all columns
 student_records <- cbind(students, marks, attendance)
@@ -132,11 +132,11 @@ student_records
 # New admissions
 new_students <- data.frame(
 RollNo = c(24, 25),
-Name = c("Varun", "Pooja"),
-Dept = c("IT", "ECE"),
-Sem1 = c(82, 79),
-Sem2 = c(86, 93),
-Attendance = c(87, 89)
+Name = c("AMAN","ROHIT"),
+Dept = c("CSE", "ECE"),
+Sem1 = c(82, 59),
+Sem2 = c(76, 93),
+Attendance = c(87, 99)
 )
 # Add rows
 final_records <- rbind(student_records, new_students)
@@ -149,19 +149,19 @@ Corporate Employee Payroll System
 R PROGRAM:
 # Employee details
 emp_details <- data.frame(
-EmpID = c(401, 402),
+EmpID = c(201, 202),
 Name = c("RAVI", "ANITA"),
 Dept = c("HR", "IT")
 )
 # Salary components
 salary <- data.frame(
-Basic = c(32000, 36000),
-HRA = c(6400, 7200),
-DA = c(3200, 3600)
+Basic = c(12000, 36000),
+HRA = c(6400, 6200),
+DA = c(5200, 8600)
 )
 # Performance rating
 rating <- data.frame(
-Rating = c(4.1, 4.6)
+Rating = c(4.9, 4.0)
 )
 # Merge column-wise
 payroll <- cbind(emp_details, salary, rating)
@@ -169,12 +169,12 @@ payroll
 # Add new employee
 new_emp <- data.frame(
 EmpID = 403,
-Name = "SUNIL",
+Name = "NAVANEETH",
 Dept = "CSE",
 Basic = 42000,
-HRA = 8400,
+HRA = 8600,
 DA = 4200,
-Rating = 4.7
+Rating = 4.8
 
 )
 payroll <- rbind(payroll, new_emp)
@@ -187,8 +187,8 @@ Hospital Information System
 R PROGRAM:
 # Patient details
 patients <- data.frame(
-PatientID = c(601, 602),
-Name = c("Ramesh", "Sita"),
+PatientID = c(201, 202),
+Name = c("KRIHSNA", "RADHA"),
 Age = c(50,44)
 )
 # Diagnosis
@@ -204,11 +204,11 @@ hospital_data <- cbind(patients, diagnosis, billing)
 hospital_data
 # New patient record
 new_patient <- data.frame(
-PatientID = 603,
-Name = "VIKRAM",
-Age = 55,
+PatientID = 203,
+Name = "AMAN",
+Age = 36,
 Disease = "DIABETES",
-Amount = 23000
+Amount = 29000
 )
 hospital_data <- rbind(hospital_data, new_patient)
 hospital_data
@@ -221,24 +221,24 @@ R PROGRAM:
 # Product details
 products <- data.frame(
 ProductID = c(31,32,33),
-ProductName = c("Mobile", "Laptop", "Tablet")
+ProductName = c("Mobile","Laptop","computer")
 )
 # Sales quantity
 sales_qty <- data.frame(
-UnitsSold = c(90, 60, 45)
+UnitsSold = c(29,33,45)
 )
 # Revenue
 revenue <- data.frame(
-Revenue = c(1800000, 3000000, 2500000)
+Revenue = c(1800000, 5000000, 3500000)
 )
 # Combine data
 sales_data <- cbind(products, sales_qty, revenue)
 sales_data
 # Add new product
 new_product <- data.frame(
-ProductID = 34,
+ProductID = 30,
 ProductName = "Washing Machine",
-UnitsSold = 50,
+UnitsSold = 56,
 Revenue = 2000000
 )
 sales_data <- rbind(sales_data, new_product)
@@ -252,7 +252,7 @@ R PROGRAM:
 # Field info
 field_info <- data.frame(
 FieldID = c(11,12),
-Crop = c("Corn", "Barley")
+Crop = c("Rice","Wheat")
 )
 # Sensor data
 sensor_data <- data.frame(
@@ -269,7 +269,7 @@ agri_data
 # New field
 new_field <- data.frame(
 FieldID = 13,
-Crop = "Soybean",
+Crop = "corn",
 Moisture = 48,
 Temp = 28,
 ExpectedYield = 4.9
@@ -287,17 +287,17 @@ University Academic Management System
 R PROGRAM:
 students <- data.frame(
 RollNo = c(101, 102, 103),
-Name = c("KAVYA", "ARJUN", "NEHA"),
-Dept = c("IT", "CSE", "ECE")
+Name = c("BHANU","ROHIT","NAVANEETH"),
+Dept = c("IT", "FINANCE", "ECE")
 )
 marks <- data.frame(
-RollNo = c(101, 102, 103),
+RollNo = c(201, 202, 203),
 Sem1 = c(82, 76, 91),
 Sem2 = c(85, 79, 94)
 )
 attendance <- data.frame(
 
-RollNo = c(101, 102, 103),
+RollNo = c(201, 202, 203),
 Attendance = c(88, 92, 90)
 )
 # Merge student details and marks
@@ -314,18 +314,18 @@ Corporate Employee Payroll System
 R PROGRAM:
 emp_details <- data.frame(
 EmpID = c(201, 202, 203),
-Name = c("RAHUL", "MEERA", "KIRAN"),
-Dept = c("Finance","IT", "HR")
+Name = c("ANU","AMAN","BHANU"),
+Dept = c("Finance","CSE", "HR")
 )
 salary <- data.frame(
-EmpID = c(211, 212),
+EmpID = c(201, 202),
 Basic = c(30000, 40000),
-HRA = c(3000, 8000),
-DA = c(1200, 2000)
+HRA = c(19000, 18000),
+DA = c(12000, 12000)
 )
 rating <- data.frame(
 EmpID = c(201, 203),
-Rating = c(4.3, 4.9)
+Rating = c(4.9, 5.9)
 )
 # LEFT JOIN (keep all employees)
 payroll <- merge(emp_details, salary, by = "EmpID", all.x = TRUE)
@@ -340,18 +340,18 @@ payroll
 Hospital Information System
 R PROGRAM:
 patients <- data.frame(
-PatientID = c(701, 702, 703),
-Name = c("Ajay", "Pooja", "Nikhil"),
+PatientID = c(501, 502, 503),
+Name = c("ANU","AMAN","BHANU"),
 Age = c(30, 46, 28)
 )
 diagnosis <- data.frame(
-PatientID = c(701, 703),
+PatientID = c(501, 503),
 Disease = c("Flu", "Cancer")
 )
 billing <- data.frame(
-PatientID = c(701, 702, 703),
+PatientID = c(501, 502, 503),
 
-Amount = c(12000, 10000, 27000)
+Amount = c(19000, 30000, 37000)
 )
 # Merge patients with diagnosis
 hospital_data <- merge(patients, diagnosis, by = "PatientID", all.x = TRUE)
@@ -365,15 +365,15 @@ hospital_data
 Retail Sales Analytics System
 R PROGRAM:
 products <- data.frame(
-ProductID = c(41, 42, 43, 44),
+ProductID = c(401, 402, 403, 404),
 ProductName = c("Camera", "Printer", "Speaker", "Router")
 )
 sales_qty <- data.frame(
-ProductID = c(41, 42, 43),
-UnitsSold = c(70, 55, 40)
+ProductID = c(401, 402, 403),
+UnitsSold = c(50, 65, 80)
 )
 revenue <- data.frame(
-ProductID = c(41, 42, 44),
+ProductID = c(401, 402, 404),
 Revenue = c(700000, 550000, 400000)
 )
 # FULL JOIN
@@ -389,11 +389,11 @@ Smart Agriculture Monitoring System
 R PROGRAM:
 field_info <- data.frame(
 FieldID = c(21, 22, 23),
-Crop = c("Rice", "Wheat", "Maize")
+Crop = c("Rice", "Corn", "Maize")
 )
 sensor_data <- data.frame(
 FieldID = c(21, 22),
-Moisture = c(50, 42),
+Moisture = c(70, 42),
 Temp = c(30, 27)
 )
 
