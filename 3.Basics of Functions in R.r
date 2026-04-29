@@ -8,7 +8,7 @@ simple_interest <- function(p, r, t){
 si <- (p * r * t) / 100
 return(si)
 }
-simple_interest(2500, 5, 3)
+simple_interest(3500,3, 1)
 
 
 3.2:
@@ -31,11 +31,11 @@ check_result(35)
 Employee Salary Calculation
 R PROGRAM:
 net_salary <- function(basic_salary){
-tax <- basic_salary * 0.10
+tax <- basic_salary * 0.12
 net <- basic_salary - tax
 return(net)
 }
-net_salary((42000)
+net_salary((49000)
 
 
 3.4:
@@ -43,9 +43,9 @@ net_salary((42000)
 Electricity Bill Generator
 R PROGRAM:
 electricity_bill <- function(units){
-if(units <= 250){
+if(units <= 150){
 bill <- units * 2
-} else if(units <= 300){
+} else if(units <= 100){
 bill <- (100 * 2) + (units - 100) * 3
 } else {
 bill <- (100 * 2) + (100 * 3) + (units - 200) * 5
@@ -60,16 +60,16 @@ electricity_bill(650)
 Online Shopping Discount
 R PROGRAM:
 final_amount <- function(amount){
-if(amount >= 6000){
+if(amount >= 4000){
 discount <- amount * 0.20
-} else if(amount >= 3000){
+} else if(amount >= 2000){
 discount <- amount * 0.10
 } else {
 discount <- 0
 }
 return(amount - discount)
 }
-final_amount(8500)
+final_amount(5500)
 
 
 3.6:
@@ -81,7 +81,7 @@ celsius_to_fahrenheit <- function(c){
 f <- (c * 9/5) + 30
 return(f)
 }
-celsius_to_fahrenheit(20)
+celsius_to_fahrenheit(50)
 
 
 3.7:
@@ -99,7 +99,7 @@ if(marks >= 90){
 "Fail"
 }
 }
-assign_grade(70)
+assign_grade(50)
 
 
 3.8:
@@ -113,7 +113,7 @@ return("Eligible to Vote")
 return("Not Eligible to Vote")
 }
 }
-check_voting(16)
+check_voting(26)
 
 
 3.9:
@@ -127,7 +127,7 @@ emi <- (principal * monthly_rate * (1 + monthly_rate)^months) /
 ((1 + monthly_rate)^months - 1)
 return(round(emi, 2))
 }
-calculate_emi(120000, 7.2, 10)
+calculate_emi(24000, 7.9, 10)
 
 
 3.10:
@@ -136,11 +136,11 @@ Hospital Patient Billing System
 R PROGRAM:
 hospital_bill <- function(consultation, room_charge, days){
 subtotal <- consultation + (room_charge * days)
-tax <- subtotal * 0.10
+tax <- subtotal * 0.23
 total <- subtotal + tax
 return(total)
 }
-hospital_bill(2500, 3000, 5)
+hospital_bill(2100, 6000, 5)
 
 
 3.11:
@@ -148,12 +148,12 @@ hospital_bill(2500, 3000, 5)
 Online Shopping Order Processing System
 R PROGRAM:
 order_total <- function(cart_value){
-if(cart_value >= 6000){
+if(cart_value >= 4000){
 discount <- cart_value * 0.20
 } else {
 discount <- 0
 }
-if(cart_value >= 8000){
+if(cart_value >= 6000){
 delivery <- 0
 } else {
 delivery <- 500
@@ -161,7 +161,7 @@ delivery <- 500
 final_amount <- cart_value - discount + delivery
 return(final_amount)
 }
-order_total(4900)
+order_total(6900)
 
 
 3.12:
@@ -192,11 +192,11 @@ smart_meter_bill <- function(peak_units, offpeak_units){
 bill <- (peak_units * 6) + (offpeak_units * 3)
 total_units <- peak_units + offpeak_units
 if(total_units > 700){
-bill <- bill * 1.10
+bill <- bill * 1.18
 }
 return(bill)
 }
-smart_meter_bill(140, 100)
+smart_meter_bill(130, 100)
 
 
 3.14:
@@ -221,14 +221,14 @@ insurance_premium(7000, 55, TRUE)
 Employee Payroll Processing System
 R PROGRAM:
 payroll <- function(basic){
-hra <- basic * 0.10
-da <- basic * 0.30
+hra <- basic * 0.11
+da <- basic * 0.23
 gross <- basic + hra + da
-tax <- gross * 0.22
+tax <- gross * 0.10
 net <- gross - tax
 return(net)
 }
-payroll(38000)
+payroll(34000)
 
 
 3.16:
@@ -236,13 +236,13 @@ payroll(38000)
 Smart City Water Usage Monitoring
 R PROGRAM:
 water_usage_status <- function(litres){
-if(litres <= 1000){
+if(litres <= 1400){
 "Normal"
-} else if(litres <= 12000){
+} else if(litres <= 19000){
 "High Usage"
 } else {
 
 "Critical"
 }
 }
-water_usage_status(850)
+water_usage_status(350)
